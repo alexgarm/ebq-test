@@ -28,9 +28,10 @@
             height: 55px
             display: flex
             justify-content: space-between
+            align-items: center
         &_logo
             width: 160px
-            height: 55px
+            
         
           
     &_content
@@ -49,11 +50,21 @@
             justify-content: center
             height: 133px
             width: 565px
+            font-size: 50px
+            span
+                height: 55px
+                margin-bottom: 10px             
+                line-height: 1
+
+                
+                
+           
         &_text
-            width: 575px
+            width: 521px
             height: 114px
-            font-size: 25px
+            font-size: 20px
             line-height: 1
+            
 
 .content
     width: 100%
@@ -63,20 +74,26 @@
     &_wrap
         display: flex
         flex-direction: column
-        align-items: center
-       
+        align-items: center   
         width: 1440px
     &_section
-        width: 68%
+        width: 70%
         height: 500px
         display: flex
         justify-content: space-between
         margin-bottom: 40px
     &_text
-        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 48%
+        padding: 5px
     &_image
-        height: 450px
-        width: 50%
+        height: 456px
+        display: flex
+        align-items: center
+        width: 48%
         overflow: hodden
        
 .footer
@@ -96,6 +113,7 @@
     &_text
         letter-spacing: 0px
         color: #fff
+        font-size: 40px
     
             
 
@@ -113,9 +131,10 @@
         color: #0A459E
         
 
-
+.bold
+    font-weight: bold
 .title
-    font-size: 50px
+    font-size: 40px
     height: 60px
     line-height: 1
   
@@ -126,5 +145,54 @@
         
 
 img
-    max-width:100%
-    height:auto
+    max-width: 100%
+    height: auto
+
+
+@media screen and ( max-width: 1000px )
+    .main
+        &_wrap
+            width: 100%
+            height: 100%
+        &_nav
+            height: 106px
+            align-items: center
+        &_content
+            height: 100%
+            &_wrap
+                width: 90%
+                height: 100%
+            &_title
+                width: 100%
+                align-items: center
+                height: 100%
+                span
+                    text-align: center
+                    line-height: 1
+            &_text
+                width: 100%
+                height: 100%
+                text-align: center
+                
+
+    .content
+        width: 100%
+        &_wrap
+            width: 100%
+       
+        &_section
+            display: flex
+            justify-content: center
+            flex-direction: column-reverse
+            margin-bottom: 200px
+        &_image
+            width: 100%
+            height: auto
+            margin-bottom: 20px
+        &_text
+            text-align: center
+            width: 100%
+            margin-bottom: 20px
+
+
+    
